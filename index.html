@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Suslov said</title>
+
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+
+    <!-- CSS -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/grid.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript" >
+        (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+            m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+        (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+        ym(51777881, "init", {
+            id:51777881,
+            clickmap:true,
+            trackLinks:true,
+            accurateTrackBounce:true,
+            webvisor:true
+        });
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/51777881" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
+</head>
+<body>
+
+<div id="particles-js"></div>
+
+<canvas id="granim-canvas"></canvas>
+
+<div class="full-hru">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="hru-content">
+                    <div class="hru-blya">
+                        <div class="copyright">
+                            <p>sorce code by <a href="https://vk.com/bosko715">Egor Eichgorn</a> & <a href="https://vk.com/agressiveskates">Roman Kuzhel</a></p>
+                            <p>redesign by <a href="https://vk.com/redeboy">Anvar Murazimov</a></p>
+                            <p>copyright © 2019</p>
+                        </div>
+                        <button id="hru"></button>
+                        <div class="hru-title">
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/granim.js"></script>
+<script src="js/main.js"></script>
+<script src="js/particles.js"></script>
+<script src="js/app.js"></script>
+
+<!-- Create a Granim instance -->
+<script>
+    let granimInstance = new Granim({
+        element: '#granim-canvas',
+        name: 'granim',
+        opacity: [1, 1],
+        states : {
+            "default-state": {
+                gradients: [
+                    ['#673AB7', '#512DA8'],
+                    ['#fc00ff', '#00dbde'],
+                    ['#7b4397', '#dc2430'],
+                    ['#833ab4', '#fd1d1d'],
+                    ['#fd1d1d', '#fcb045'],
+                    ['#6441A5', '#2a0845']
+
+                ]
+            }
+        }
+    });
+</script>
+
+</body>
+</html>

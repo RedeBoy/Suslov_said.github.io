@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css?family=Marmelad&subset=cyrillic');
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+
+  vertical-align: baseline;
+
+  border: 0;
+
+  font-size: 100%;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none; }
+
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-spacing: 0;
+
+  border-collapse: collapse;
+}
+
+p {
+  margin: 0; }
+a {
+  color: inherit;
+}
+body {
+  position: relative;
+
+  overflow: hidden;
+}
+
+body {
+  font-family: 'Marmelad', sans-serif;
+ }
+
+@-webkit-keyframes zoomIn {
+  from {
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3);
+
+    opacity: 0; }
+  50% {
+    opacity: 1; } }
+
+@keyframes zoomIn {
+  from {
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3);
+
+    opacity: 0; }
+  50% {
+    opacity: 1; } }
+
+#granim-canvas {
+  width: 100%;
+  height: 100vh; }
+/*
+#particles-js {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100vh; } */
+
+/* ---- reset ---- */
+body {
+  margin: 0;
+  font: normal 75% Arial, Helvetica, sans-serif;
+}
+canvas {
+  display: block;
+  vertical-align: bottom;
+} /* ---- particles.js container ---- */
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #043564;
+  background-image: url("http://vincentgarreau.com/particles.js/assets/img/kbLd9vb_new.gif");
+  background-repeat: no-repeat;
+  background-size: 60%;
+  background-position: -10% 65%;
+} /* ---- stats.js ---- */
+.count-particles {
+  background: #000022;
+  position: absolute;
+  top: 48px;
+  left: 0;
+  width: 80px;
+  color: #13e8e9;
+  font-size: 0.8em;
+  text-align: left;
+  text-indent: 4px;
+  line-height: 14px;
+  padding-bottom: 2px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: bold;
+}
+.js-count-particles {
+  font-size: 1.1em;
+}
+#stats,
+.count-particles {
+  -webkit-user-select: none;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+#stats {
+  border-radius: 3px 3px 0 0;
+  overflow: hidden;
+}
+.count-particles {
+  border-radius: 0 0 3px 3px;
+}
+
+
+
+
+
+.full-hru {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  height: 100vh; }
+  .full-hru .hru-content {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+
+    height: 100vh;
+
+    -webkit-justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .full-hru .hru-content .hru-blya {
+      width: 100%;
+
+      text-align: center; }
+      .full-hru .hru-content .hru-blya .hru-title {
+        min-height: 80px; }
+        .full-hru .hru-content .hru-blya .hru-title p {
+          color: #fff;
+
+          font-size: 40px; }
+        .full-hru .hru-content .hru-blya .hru-title .hru-active {
+          -webkit-animation: zoomIn .2s ease-in-out;
+                  animation: zoomIn .2s ease-in-out; }
+      .full-hru .hru-content .hru-blya {
+        display: flex;
+
+        justify-content: center;
+        align-items: center;
+        flex-flow: column nowrap;
+      }
+      .full-hru .hru-content .hru-blya button {
+        display: inline-block;
+
+        width: 50vw;
+        height: 50vh;
+        margin: 5% 0 5% 0;
+
+        cursor: pointer;
+        -webkit-transition: all ease .1s;
+        -o-transition: all ease .1s;
+        transition: all ease .1s;
+
+        border: 1px solid transparent;
+        outline: none;
+        -webkit-tap-highlight-color: rgba(0,0,0,0);
+        -webkit-tap-highlight-color: transparent;
+        background: transparent url("../img/pig-shadow.png") no-repeat center top;
+        -webkit-background-size: contain;
+                background-size: contain; }
+        .full-hru .hru-content .hru-blya button:active {
+          background: transparent url("../img/pig.png") no-repeat center top;
+          -webkit-background-size: contain;
+                  background-size: contain;
+          -webkit-tap-highlight-color: rgba(0,0,0,0);
+          -webkit-tap-highlight-color: transparent;
+          outline: none;
+        }
+        .full-hru .copyright{
+          position: absolute;
+          top: 10px;
+
+          opacity: .3;
+        }
+        .full-hru .copyright p {
+          margin: 8px 0 0 0;
+
+          text-align: center;
+
+          color: #fff;
+
+          font-size: 13px;
+        }
+        @media all and (max-width: 768px) and (min-width: 320px) {
+          .full-hru .hru-content .hru-blya button {
+            width: 80vw;
+            margin: 15% 0 0 0;
+          }
+          .full-hru .hru-content .hru-blya .hru-title p {
+            height: 30vh;
+
+            font-size: 28px;
+          }
+        }
+
+/*# sourceMappingURL=maps/main.css.map */
